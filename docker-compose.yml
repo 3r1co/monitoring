@@ -57,6 +57,8 @@ services:
   
   grafana:
     image: grafana/grafana
+    environment:
+    - VIRTUAL_HOST=grafana.3r1.co
     volumes:
       - grafana_data:/var/lib/grafana
     env_file:
